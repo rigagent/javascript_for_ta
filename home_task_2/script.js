@@ -25,8 +25,8 @@ console.log(typeof res4);
 
 let number = prompt("Enter a number:");
 
-if (number > 0 && number % 7 == 0) {
-    console.log(`The number "${number}" meets the initial requirements: is a positive and a multiple of 7.`);
+if (number % 2 === 0 && number > 0 && number % 7 == 0) {
+    console.log(`The number "${number}" meets the initial requirements: is even, is a positive and a multiple of 7.`);
 } else {
     console.log(`The number "${number}" doesn't meet the initial requirements.`);
 }
