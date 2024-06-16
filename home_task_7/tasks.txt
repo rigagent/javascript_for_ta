@@ -1,0 +1,52 @@
+Practical task
+
+1. Using methods of the window object create :
+	1) a new window with a size of 300x300 pixels.
+	2) with a delay of 2 seconds, resize the window to 500x500 pixels
+	3) with a delay of 2 seconds, move the window to the point with coordinates (200, 200)
+	4) with a delay of 2 seconds, close the window.
+
+
+2 . For a given HTML page :
+
+    <p id ='text'>I learn JavaScript events!</p>
+    <div>
+        .<button. . . . . >Change style!</button>
+    </div>
+
+write a changeCSS() function that will trigger when the button is clicked and change the style of the content of the < p > tag: font color - orange,
+font size 20 ps, font family "Comic Sans MS" .
+
+
+3. A page with 3 buttons and 1 link is given. Write Javascript code and implement an HTML page with appropriate events on each element:
+	1) 1st button – when you click on it, the background color of the page changes to blue
+	2) 2nd button – when you double-click it, the background color of the page changes to pink
+	3) 3 - the button - when you press and hold the button, the background color of the page turns brown. When released - white.
+	4) When hovering over the link, the background color becomes yellow, when hovering – white.
+	Example – the cursor is on a link.
+
+
+4. Implement a program that will delete the selected item from the drop-down list when the button is pressed. All items can be deleted in any order.
+
+
+5. Implement a program that displays a message when a button is pressed "I was pressed!", when hovering over the button will display the message "Mouse on me!",
+and when the mouse cursor is moved away will display the message "Mouse is not on me!".
+
+
+6. Implement a program that will monitor the change in size (width and height) of the browser window and display the corresponding values on the current page
+when it is stretched/shrunk.
+
+
+Additional - 7 * . You need to implement 2 drop-down lists on the page. The first contains the names of countries, the second contains the names of cities.
+Implement work in such a way that when a certain country is selected from the left drop-down list, the cities of that country appear in the right drop-down list.
+The list of cities is formed dynamically , through JavaScript . You also need to display the name of the selected country and city below.
+
+HTML page code :
+    <select name="country" id="country">
+	    <option value="ger">Germany</option>
+	    <option value="usa">USA</option>
+	    <option value="ukr">Ukraine</option>
+    </select>
+
+    <select name="cities" id="cities"></select>
+    <p></p>
