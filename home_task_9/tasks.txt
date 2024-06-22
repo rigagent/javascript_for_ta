@@ -1,0 +1,43 @@
+Practical task
+
+1. Implement function getPromise(message, delay) which accepts textual message
+and integer value delay (in ms) and returns a Promise which return a message after the entered delay.
+Application example functions:
+
+    getPromise("test promise", 2000).then(function(data) {
+        console.log(data);
+    });
+
+Result: after 2 seconds, "test promise" is displayed in the console
+
+
+2. Implement function calcArrProduct (arr), which accepts array of numbers. Function must return a Promise,
+the work is completed by returning the product of the elements of the array , if they are of type Numbers,
+or message "Error! Incorrect array!" if at least 1 element of the array is non-numeric.
+An example of using the function:
+
+    calcArrProduct([3,4,5]).then(result => console.log(result)); // 60
+    calcArrProduct([5,"user2", 7, 12]).then(result => console.log(result));
+    // "Error! Incorrect array!"
+
+
+Additional-3. A given for loop that outputs a sequence of numbers from 0 to 10 at a random interval (from 0 to N milliseconds ),
+using promises, it is necessary to change the cycle so that the numbers are output in a strict sequence from 0 to 10.
+For example, if the output of zero takes 4 seconds and 2 seconds, then the unit must wait for the output of zero and only
+then start its countdown (to observe the sequence of and).
+To solve the problem, it is necessary to apply the specified function delay(i, time), which returns a delay that will be resolved
+by the current value of the number-counter of the cycle and which is output after a time of milliseconds.
+
+Example of work:
+
+    const delay = (i, time) => new Promise(resolve => setTimeout (() => resolve(i), time));
+    function showNumbers ( ) {
+        // your code with using delay(i, time)
+    }
+    showNumbers();
+
+Result: with different random intervals (for example, from 0 to 3 seconds), the numbers 0,1,2,3,4,5,6,7,8,9 are sequentially output to the console.
+
+
+Additional - 4. Task number 3 must be implemented without the use of promises.
+Rewrite the showNumbers function using the async/await construct.
