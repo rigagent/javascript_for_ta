@@ -1,0 +1,7 @@
+Practical task
+
+1. Create a NodeJS http server that will listen for requests on port 5000 on the local machine. The server should return a page containing the name of the current user of the operating system, the type of the operating system, the system's operating time in minutes (use the OS module), the current working directory and the name of the server file (use the path module).
+
+
+2. It is necessary to create your own module personalmodule.js, which contains a function that accepts the name of the system user and works with the current time and, based on the time of day, displays a message greeting the user. To export module variables or functions externally, you can use the module.exports object. Create NodeJS server, which, using the functionality of the developed module, will return the following page
+
